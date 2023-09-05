@@ -44,6 +44,7 @@ Route::resource('candidates', CandidateController::class)->middleware('auth');
 
 // Applications
 Route::resource('applications', ApplicationController::class)->middleware('auth');
+Route::post('/jobs/{job}/apply', 'JobController@apply')->middleware('checkaccess');
 Route::get('/applications', [ApplicationController::class, 'index'])->name('applications.index');
 Route::get('/applications/create', [ApplicationController::class, 'create'])->name('applications.create');
 Route::post('/applications', [ApplicationController::class, 'store'])->name('applications.store')->middleware('auth');
@@ -57,9 +58,10 @@ Route::delete('/applications/{application}', [ApplicationController::class, 'des
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
     Route::get('/profile/settings', [ProfileController::class, 'settings'])->name('profile.settings');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::post('/profile', [ProfileController::class, 'store'])->name('profile.store');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('/profile/updateSettings', [ProfileController::class, 'update'])->name('profile.updateSettings');
 });
 
 // Home (after login)

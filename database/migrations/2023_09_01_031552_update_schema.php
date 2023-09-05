@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->enum('type', ['CLT', 'Pessoa Jurídica', 'Freelancer']);
-            $table->enum('status', ['open', 'closed', 'paused'])->default('open');
+            $table->enum('status', ['open', 'paused', 'closed'])->default('open');
             $table->timestamps();
 
         });

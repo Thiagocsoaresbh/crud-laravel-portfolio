@@ -24,9 +24,9 @@
         <div class="form-group">
             <label for="status">Status:</label>
             <select id="status" name="status" class="form-control">
-                <option value="Ativa">Ativa</option>
-                <option value="Pausada">Pausada</option>
-                <option value="Encerrada">Encerrada</option>
+                <option value="open">Ativa</option>
+                <option value="paused">Pausada</option>
+                <option value="closed">Encerrada</option>
             </select>
         </div>
         <button type="submit" class="btn btn-primary">Salvar</button>

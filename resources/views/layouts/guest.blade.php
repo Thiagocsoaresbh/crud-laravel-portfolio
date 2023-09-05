@@ -32,5 +32,9 @@
             {{ $slot }}
         </div>
     </div>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS do diretório público -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 </body>
 </html>

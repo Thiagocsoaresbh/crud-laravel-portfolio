@@ -19,14 +19,14 @@
 
                         @if (auth()->user()->access_level == 'admin')
 
-                            <a href="{{ route('jobs.index') }}">Ver Todas as Vagas</a>
-                            <a href="{{ route('dashboard') }}">Dashboard Administrativo</a>
+                            <a href="{{ route('jobs.index') }}" class="me-3">Ver Todas as Vagas</a>
+                            <a href="{{ route('dashboard') }}" class="me-3">Dashboard Administrativo</a>
                             <!-- ... -->
 
                         @else
 
-                            <a href="{{ route('jobs.index') }}">Ver Vagas</a>
-                            <a href="{{ route('applications.index') }}">Minhas Candidaturas</a>
+                            <a href="{{ route('jobs.index') }}" class="me-3">Ver Vagas</a>
+                            <a href="{{ route('applications.index') }}" class="me-3">Minhas Candidaturas</a>
                             <!-- ... -->
 
                         @endif

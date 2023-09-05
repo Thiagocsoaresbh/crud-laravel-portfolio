@@ -29,9 +29,9 @@
         <div class="form-group">
             <label for="status">Status:</label>
             <select id="status" name="status" class="form-control">
-                <option value="Ativa" {{ $job->status == 'Ativa' ? 'selected' : '' }}>Ativa</option>
-                <option value="Pausada" {{ $job->status == 'Pausada' ? 'selected' : '' }}>Pausada</option>
-                <option value="Encerrada" {{ $job->status == 'Encerrada' ? 'selected' : '' }}>Encerrada</option>
+                <option value="open" {{ $job->status == 'open' ? 'selected' : '' }}>Ativa</option>
+                <option value="paused" {{ $job->status == 'paused' ? 'selected' : '' }}>Pausada</option>
+                <option value="closed" {{ $job->status == 'closed' ? 'selected' : '' }}>Encerrada</option>
             </select>
         </div>
 

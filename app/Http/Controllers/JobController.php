@@ -47,7 +47,7 @@ class JobController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'required|string',
             'type' => 'required|in:CLT,Pessoa Jurídica,Freelancer',
-            'status' => 'required|in:Ativa,Pausada'
+            'status' => 'required|in:open,paused,closed'
         ]);
 
         $job->update($data);

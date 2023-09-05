@@ -18,6 +18,43 @@
 </head>
 <body>
     <div id="app">
+        <main class="py-4">
+            <div class="container">
+                @section('content')
+                    <h2>Criar nova inscrição</h2>
+
+                    <form action="{{ route('applications.store') }}" method="POST">
+                        @csrf
+
+                        <div class="form-group">
+                            <label for="candidate_id">Candidato</label>
+                            <select class="form-control" id="candidate_id" name="candidate_id" required>
+                                @foreach($candidates as $candidate)
+                                    <option value="{{ $candidate->id }}">{{ $candidate->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="job_id">Vaga</label>
+                            <select class="form-control" id="job_id" name="job_id" required>
+                                @foreach($jobs as $job)
+                                    <option value="{{ $job->id }}">{{ $job->title }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cover_letter">Carta de Apresentação</label>
+                            <textarea class="form-control" id="cover_letter" name="cover_letter" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
+                    </form>
+                @endsection
+            </div>
+        </main>
+
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -83,7 +120,24 @@
 
         <main class="py-4">
             <div class="container">
-                @yield('content')
+                @section('content')
+                    <h2>Criar nova inscrição</h2>
+
+                    <form action="{{ route('applications.store') }}" method="POST">
+                        @csrf
+                        <div class="form-group">
+                            <label for="job_id">Vaga</label>
+                            <select class="form-control" id="job_id" name="job_id" required>
+                                <!-- <option value="ID_DO_JOB">Nome do Job</option> -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cover_letter">Carta de Apresentação</label>
+                            <textarea class="form-control" id="cover_letter" name="cover_letter" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
+                    </form>
+                @endsection
             </div>
         </main>
     </div>

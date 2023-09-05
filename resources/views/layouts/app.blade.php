@@ -13,6 +13,8 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -49,43 +51,37 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->name }}
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <!-- Link para o perfil do usuário -->
                                     <a class="dropdown-item" href="{{ route('profile.show') }}">Meu Perfil</a>
-
-                                    <!-- Link para configurações do perfil do usuário -->
                                     <a class="dropdown-item" href="{{ route('profile.settings') }}">Configurações</a>
-
-                                    <!-- Link para as inscrições do usuário -->
                                     <a class="dropdown-item" href="{{ route('applications.index') }}">Minhas Inscrições</a>
-
-                                    <div class="dropdown-divider"></div> <!-- separador -->
-
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                        document.getElementById('logout-form').submit();">
+                                       onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
-
                             </li>
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
-        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS do diretório público -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 </body>
 </html>

@@ -1,10 +1,11 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Application;
 use App\Models\Job;
+use App\Models\Candidate; // Inclua isto apenas se você tiver um modelo Candidate
 
 class ApplicationController extends Controller
 {
@@ -16,7 +17,9 @@ class ApplicationController extends Controller
 
     public function create()
     {
-        return view('applications.create');
+        $jobs = Job::all();
+        $candidates = Candidate::all();
+        return view('applications.create', compact('jobs', 'candidates'));
     }
 
     public function store(Request $request)
@@ -32,7 +35,9 @@ class ApplicationController extends Controller
 
     public function edit(Application $application)
     {
-        return view('applications.edit', compact('application'));
+        $jobs = Job::all();
+        $candidates = Candidate::all(); // Inclua isto apenas se você tiver um modelo Candidate
+        return view('applications.edit', compact('application', 'jobs', 'candidates'));
     }
 
     public function update(Request $request, Application $application)
