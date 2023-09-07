@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers\Auth;
 
@@ -18,7 +18,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             return redirect()->intended('dashboard');
         }
-        return back()->withErrors(['email' => 'These credentials do not match our records.']);
+        return back()->withErrors(['email' => 'E-mail não cadastrado']);
     }
 
     public function logout()

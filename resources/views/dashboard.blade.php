@@ -5,6 +5,7 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <div class="container mt-5">
+        <h3>Atalhos Rápidos</h3>
         <div class="row mb-5">
             <div class="col-md-6">
                 <div class="card h-100">

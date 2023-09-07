@@ -28,7 +28,7 @@
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
 
-                <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 
                 <x-dropdown-link :href="route('logout')"

@@ -40,6 +40,11 @@
             @endforeach
         </tbody>
     </table>
+
+    @if (auth()->user()->access_level == 'admin')
     <a href="{{ route('dashboard') }}" class="btn btn-secondary mt-3">Voltar para o Dashboard</a>
+    @else
+    <p></p>
+    @endif
 </div>
 @endsection

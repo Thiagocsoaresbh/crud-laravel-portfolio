@@ -1,7 +1,7 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
-                <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
         <!-- Password Reset Token -->
         <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
@@ -32,7 +32,7 @@
 
         <div class="flex items-center justify-end mt-4">
             <x-primary-button>
-                {{ __('Reset Password') }}
+                {{ __('Recuperar Senha') }}
             </x-primary-button>
         </div>
     </form>
