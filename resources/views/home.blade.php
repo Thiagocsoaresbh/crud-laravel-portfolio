@@ -7,7 +7,6 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
                 <div class="card-body">
-                    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

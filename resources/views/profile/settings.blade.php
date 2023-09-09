@@ -8,7 +8,7 @@
         @method('PUT')
 
         <div class="mb-3">
-            <label class="form-label">Configurações de Privacidade:</label>
+            <label class="form-label">Configurações de teste Privacidade:</label>
             <select name="privacy" class="form-select">
                 <option value="public">Público</option>
                 <option value="private">Privado</option>
@@ -16,11 +16,11 @@
         </div>
 
         <div class="mb-3">
-            <label class="form-check-label">Receber notificações por e-mail:</label>
+            <label class="form-check-label" style="margin-right: 25px;">Habilitar recurso teste:</label>
             <input type="checkbox" name="notifications" value="1" class="form-check-input">
         </div>
 
-        <button type="submit" class="btn btn-primary">Atualizar Configurações</button>
+        <button type="submit" class="btn btn-primary btn-sm">Atualizar Configurações</button>
     </form>
 </div>
 @endsection

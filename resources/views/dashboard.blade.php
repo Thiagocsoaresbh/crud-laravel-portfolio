@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <link href="{{ asset('css/output.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <div class="container mt-5">
         <h3>Atalhos Rápidos</h3>
