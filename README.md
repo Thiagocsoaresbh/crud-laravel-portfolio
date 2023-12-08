@@ -1,27 +1,26 @@
-# Esse é um CRUD que criei para reaver meus conhecimentos em Laravel atendendo os seguintes requisitos propostos em um desafio
+**Esse é um CRUD que criei para reaver meus conhecimentos em Laravel atendendo os seguintes requisitos propostos em um desafio**
 
-##Instruções
+## Instruções
 O desafio consiste em implementar uma aplicação web utilizando o framework PHP Laravel, um banco de dados relacional (Mysql, Postgres ou SQLite), que terá como finalidade a inscrição de candidatos a uma oportunidade de emprego.
 
-##Sua aplicação deve possuir:
+## Sua aplicação deve possuir:
 
-###CRUD de vagas:
+### CRUD de vagas:
 Criar, editar, excluir e listar vagas.
 A vaga pode ser CLT, Pessoa Jurídica ou Freelancer.
-###CRUD de candidatos:
+### CRUD de candidatos:
 Criar, editar, excluir e listar candidatos.
 Um cadidato pode se inscrever em uma ou mais vagas.
 Deve ser ser possível "pausar" a vaga, evitando a inscrição de candidatos.
-###Cada CRUD:
+### Cada CRUD:
 Deve possuir formulários para criação e atualização de seus itens.
 Deve permitir a deleção de qualquer item de sua lista.
 Implementar validações de campos obrigatórios e tipos de dados.
 Testes unitários e de unidade.
-##Banco de dados
+## Banco de dados
 O banco de dados deve ser criado utilizando Migrations do framework Laravel, e também utilizar Seeds e Factorys para popular as informações no banco de dados.
-##Tecnologias a serem utilizadas
+## Tecnologias a serem utilizadas
 Devem ser utilizadas as seguintes tecnologias:
-
 -HTML
 -CSS
 -Javascript
@@ -29,7 +28,7 @@ Devem ser utilizadas as seguintes tecnologias:
 -Docker (construção do ambiente de desenvolvimento)
 -Mysql, Postgres ou SQLite
 
-##Bônus
+## Bônus
 -API Rest JSON para todos os CRUDS listados acima.
 -Implementar autenticação de usuário na aplicação.
 
@@ -83,6 +82,7 @@ Após concluir as etapas acima, você poderá acessar a aplicação em seu naveg
 
 http://localhost:porta
 
+`***`
 
 # Características do Front-end
 
@@ -93,7 +93,8 @@ http://localhost:porta
 - Verificação para força da senha
 - Bloqueio de registro para e-mail já existente
 - Confirmação da senha
-![Texto Alternativo](/imagens/exemplo.jpg)
+
+![Texto Alternativo](/public/images/dashboard-logado.png)
 
 ## Dashboard
 - Dados do login, menu, opções
@@ -102,7 +103,8 @@ http://localhost:porta
 ### Características do Dashboard logado:
 - Mensagem de boas vindas e nome do usuário logado
 - Menu com opções para ver Vagas, Candidaturas, Perfil
-![Texto Alternativo](/imagens/dashboard-logado.png)
+
+![Texto Alternativo](/public/imagens/dashboard-logado.png)
 
 ### Características do Dashboard login:
 - Link para login com dados de entrada e-mail e senha
@@ -117,7 +119,8 @@ http://localhost:porta
 - Opção de Editar cada vaga
 - Opção de excluir cada vaga
 - Paginação para até 10 registros por página
-![Listagem de vagas](/imagens/listagem-vagas.png)
+
+![Listagem de vagas](/public/imagens/listagem-vagas.png)
 
 ### Função editar vaga:
 - Editar; Título, Descrição, Tipo, Status
@@ -130,7 +133,8 @@ http://localhost:porta
 - Opção de tipos; CLT, Freelancer, Pessoa Jurídica (PJ)
 - Opção de status; Ativa, Pausada, Encerrada
 - Opção; Salvar vaga ou voltar para lista de vagas
-![Criar vaga](/imagens/criar-vaga.png)
+
+![Criar vaga](/public/imagens/criar-vaga.png)
 
 
 ## Listagem de incrições:
@@ -140,13 +144,15 @@ http://localhost:porta
 - Listagem até 20 registros
 - Mensagem de confirmação para exclusão bem sucedida
 - *Paginação em contrução
-![Listar Inscrições](/imagens/listar-inscricoes.png)
+
+![Listar Inscrições](/public/imagens/listar-inscricoes.png)
 
 ### Criar nova inscrição:
 - Menu dropdown para seleção da vaga
 - Caixa de texto para Carta de apresentação
 - Enviar inscrição
-![Criar vaga](/imagens/criar-nova-inscricao.png)
+
+![Criar vaga](/public/imagens/criar-nova-inscricao.png)
 
 
 ## Link para perfil do usuário
@@ -155,7 +161,10 @@ http://localhost:porta
 ## Link para status do perfil
 - Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
 - *Menu em construção para vagas e inscrições dentro do status
-![Status do Perfil](/imagens/perfil-status.png)
+
+![Status do Perfil](/public/imagens/perfil-status.png)
+
+`---`
 
 # Veja abaixo sobre o LARAVEL
 
