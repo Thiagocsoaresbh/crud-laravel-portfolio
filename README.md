@@ -82,9 +82,9 @@ Após concluir as etapas acima, você poderá acessar a aplicação em seu naveg
 
 http://localhost:porta
 
-`***`
+***
 
-# Características do Front-end
+# Características atuais do projeto
 
 ## Sistema de login - Registro:
 **Registro para Nome, Email, Senha, Confirmação de senha.**
@@ -104,7 +104,7 @@ http://localhost:porta
 - Mensagem de boas vindas e nome do usuário logado
 - Menu com opções para ver Vagas, Candidaturas, Perfil
 
-![Texto Alternativo](/public/imagens/dashboard-logado.png)
+![Texto Alternativo](/public/images/dashboard-logado.png)
 
 ### Características do Dashboard login:
 - Link para login com dados de entrada e-mail e senha
@@ -120,7 +120,7 @@ http://localhost:porta
 - Opção de excluir cada vaga
 - Paginação para até 10 registros por página
 
-![Listagem de vagas](/public/imagens/listagem-vagas.png)
+![Listagem de vagas](/public/images/listagem-vagas.png)
 
 ### Função editar vaga:
 - Editar; Título, Descrição, Tipo, Status
@@ -134,7 +134,7 @@ http://localhost:porta
 - Opção de status; Ativa, Pausada, Encerrada
 - Opção; Salvar vaga ou voltar para lista de vagas
 
-![Criar vaga](/public/imagens/criar-vaga.png)
+![Criar vaga](/public/images/criar-vaga.png)
 
 
 ## Listagem de incrições:
@@ -145,14 +145,14 @@ http://localhost:porta
 - Mensagem de confirmação para exclusão bem sucedida
 - *Paginação em contrução
 
-![Listar Inscrições](/public/imagens/listar-inscricoes.png)
+![Listar Inscrições](/public/images/listar-inscricoes.png)
 
 ### Criar nova inscrição:
 - Menu dropdown para seleção da vaga
 - Caixa de texto para Carta de apresentação
 - Enviar inscrição
 
-![Criar vaga](/public/imagens/criar-nova-inscricao.png)
+![Criar vaga](/public/images/criar-nova-inscricao.png)
 
 
 ## Link para perfil do usuário
@@ -162,9 +162,54 @@ http://localhost:porta
 - Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
 - *Menu em construção para vagas e inscrições dentro do status
 
-![Status do Perfil](/public/imagens/perfil-status.png)
+![Status do Perfil](/public/images/perfil-status.png)
 
-`---`
+
+## Testes unitários criados para testar as funções essenciais
+**Criados testes unitários para:**
+- Criar vaga
+- Atualizar vaga
+- Apagar vaga
+- Recuperar vaga
+- Criar uma incrição
+- Criar um candidato
+- Atualizar um candidato
+
+![Testes unitários](/public/images/testes-unitarios.png)
+
+## Testes funcionais criados para testar os seguintes recursos:
+**Criados testes funcionais / recursos para:**
+- Criar vaga
+- Criar uma incrição
+- Criar um candidato
+- Criar usuário
+- Criar usuário autenticado
+- Criar perfil teste
+
+![Testes funcionais / recursos](/public/images/testes-features.png)
+
+## Criação das migrations
+- Criadas as migrations para todas funcionalidades do sistema no banco de dados
+
+## Criação das seed para:
+- Candidatos
+- Incrições
+- Usuários
+- Vagas
+- Database
+
+## Criação das Factories
+- Usuários, Candidatos, Vagas, Inscrições
+
+## Criação das API's, Rotas web e rotas de autenticação para:
+- Indexação
+- Atualização
+- Remoção
+- Listagem
+- Armazenamento
+
+
+---
 
 # Veja abaixo sobre o LARAVEL
 

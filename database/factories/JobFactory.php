@@ -12,8 +12,11 @@ class JobFactory extends Factory
 
     public function definition()
     {
+        // Cria um usuário usando a factory de usuário
+        $user = User::factory()->create();
+
         return [
-            'user_id' => User::inRandomOrder()->first()->id,
+            'user_id' => $user->id,
             'title' => $this->faker->jobTitle,
             'description' => $this->faker->paragraph,
             'type' => $this->faker->randomElement(['CLT', 'Pessoa Jurídica', 'Freelancer']),
