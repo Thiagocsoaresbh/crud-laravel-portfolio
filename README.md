@@ -1,5 +1,6 @@
 # Esse é um CRUD que criei para reaver meus conhecimentos em Laravel atendendo os seguintes requisitos propostos em um desafio
 
+
 ## Sistema de login - Registro:
 *Registro para Nome, Email, Senha, Confirmação de senha.*
 
@@ -7,7 +8,7 @@
 - Verificação para força da senha
 - Bloqueio de registro para e-mail já existente
 - Confirmação da senha
-
+![Texto Alternativo](/imagens/exemplo.jpg)
 
 ## Dashboard
 - Dados do login, menu, opções
@@ -16,6 +17,7 @@
 ### Características do Dashboard logado:
 - Mensagem de boas vindas e nome do usuário logado
 - Menu com opções para ver Vagas, Candidaturas, Perfil
+![Texto Alternativo](/imagens/dashboard-logado.png)
 
 ### Características do Dashboard login:
 - Link para login com dados de entrada e-mail e senha
@@ -30,6 +32,7 @@
 - Opção de Editar cada vaga
 - Opção de excluir cada vaga
 - Paginação para até 10 registros por página
+![Listagem de vagas](/imagens/listagem-vagas.png)
 
 ### Função editar vaga:
 - Editar; Título, Descrição, Tipo, Status
@@ -42,6 +45,7 @@
 - Opção de tipos; CLT, Freelancer, Pessoa Jurídica (PJ)
 - Opção de status; Ativa, Pausada, Encerrada
 - Opção; Salvar vaga ou voltar para lista de vagas
+![Criar vaga](/imagens/criar-vaga.png)
 
 
 ## Listagem de incrições:
@@ -51,11 +55,13 @@
 - Listagem até 20 registros
 - Mensagem de confirmação para exclusão bem sucedida
 - *Paginação em contrução
+![Listar Inscrições](/imagens/listar-inscricoes.png)
 
 ### Criar nova inscrição:
 - Menu dropdown para seleção da vaga
 - Caixa de texto para Carta de apresentação
 - Enviar inscrição
+![Criar vaga](/imagens/criar-nova-inscricao.png)
 
 
 ## Link para perfil do usuário
@@ -64,7 +70,7 @@
 ## Link para status do perfil
 - Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
 - *Menu em construção para vagas e inscrições dentro do status
-
+![Status do Perfil](/imagens/perfil-status.png)
 
 # Veja abaixo sobre o LARAVEL
 
