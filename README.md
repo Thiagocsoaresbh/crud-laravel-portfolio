@@ -1,8 +1,93 @@
 # Esse é um CRUD que criei para reaver meus conhecimentos em Laravel atendendo os seguintes requisitos propostos em um desafio
 
+##Instruções
+O desafio consiste em implementar uma aplicação web utilizando o framework PHP Laravel, um banco de dados relacional (Mysql, Postgres ou SQLite), que terá como finalidade a inscrição de candidatos a uma oportunidade de emprego.
+
+##Sua aplicação deve possuir:
+
+###CRUD de vagas:
+Criar, editar, excluir e listar vagas.
+A vaga pode ser CLT, Pessoa Jurídica ou Freelancer.
+###CRUD de candidatos:
+Criar, editar, excluir e listar candidatos.
+Um cadidato pode se inscrever em uma ou mais vagas.
+Deve ser ser possível "pausar" a vaga, evitando a inscrição de candidatos.
+###Cada CRUD:
+Deve possuir formulários para criação e atualização de seus itens.
+Deve permitir a deleção de qualquer item de sua lista.
+Implementar validações de campos obrigatórios e tipos de dados.
+Testes unitários e de unidade.
+##Banco de dados
+O banco de dados deve ser criado utilizando Migrations do framework Laravel, e também utilizar Seeds e Factorys para popular as informações no banco de dados.
+##Tecnologias a serem utilizadas
+Devem ser utilizadas as seguintes tecnologias:
+
+-HTML
+-CSS
+-Javascript
+-Framework Laravel (PHP)
+-Docker (construção do ambiente de desenvolvimento)
+-Mysql, Postgres ou SQLite
+
+##Bônus
+-API Rest JSON para todos os CRUDS listados acima.
+-Implementar autenticação de usuário na aplicação.
+
+
+# Pré-requisitos para executar o projeto pela imagem
+
+Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina. 
+Caso não tenha, você pode instalá-los seguindo as instruções em:
+
+- [**Docker**](https://docs.docker.com/get-docker/)
+- [**Docker Compose**](https://docs.docker.com/compose/install/)
+
+## Configurando o Ambiente
+
+1. Clone este repositório da branch thiagocsoares para o diretório desejado em sua máquina:
+
+execute um git clone do projeto
+
+2. Navegue até o diretório do projeto:
+
+entre na pasta: cd crud-laravel-pleno 
+
+Em seguida crie um arquivo .env a partir do arquivo .env.example:
+Edite o arquivo .env e ajuste as variáveis de ambiente conforme necessário.
+
+3. Iniciando a Aplicação
+
+Navegue até o diretório do projeto:
+
+cd crud-laravel-pleno e abra um terminal e execute o seguinte comando para construir os contêineres Docker e iniciar os serviços:
+
+docker-compose up -d
+
+Aguarde até que os contêineres sejam criados e os serviços sejam inicializados.
+
+4. Execute o seguinte comando para instalar as dependências do Laravel:
+
+docker-compose exec app composer install
+
+5 Execute as migrações do banco de dados:
+
+./vendor/bin/sail artisan migrate
+
+6. Execute as Seeds
+
+./vendor/bin/sail artisan db:seed
+
+7. Acessando a Aplicação
+
+Após concluir as etapas acima, você poderá acessar a aplicação em seu navegador em:
+
+http://localhost:porta
+
+
+# Características do Front-end
 
 ## Sistema de login - Registro:
-*Registro para Nome, Email, Senha, Confirmação de senha.*
+**Registro para Nome, Email, Senha, Confirmação de senha.**
 
 ### Características do Registro:
 - Verificação para força da senha
