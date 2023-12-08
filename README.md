@@ -65,7 +65,7 @@
 
 
 ## Link para perfil do usuário
-- Opção para Edição de dados do perfil e update
+- Opção para Edição de dados do perfil e update.
 
 ## Link para status do perfil
 - Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
