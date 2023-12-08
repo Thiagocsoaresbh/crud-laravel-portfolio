@@ -1,3 +1,73 @@
+# Esse é um CRUD que criei para reaver meus conhecimentos em Laravel atendendo os seguintes requisitos propostos em um desafio
+
+## Sistema de login - Registro:
+*Registro para Nome, Email, Senha, Confirmação de senha.*
+
+### Características do Registro:
+- Verificação para força da senha
+- Bloqueio de registro para e-mail já existente
+- Confirmação da senha
+
+
+## Dashboard
+- Dados do login, menu, opções
+- Login e Registro
+
+### Características do Dashboard logado:
+- Mensagem de boas vindas e nome do usuário logado
+- Menu com opções para ver Vagas, Candidaturas, Perfil
+
+### Características do Dashboard login:
+- Link para login com dados de entrada e-mail e senha
+- Opção para lembrar senha
+- Opção para recuperar senha
+- Envio de link para recuperação
+- *Em construção mensageria para recebimento de e-mails e link de recuperação
+
+
+## Listagem de vagas:
+- Listagem das vagas por Título, Descrição, Tipo, Status, Ações
+- Opção de Editar cada vaga
+- Opção de excluir cada vaga
+- Paginação para até 10 registros por página
+
+### Função editar vaga:
+- Editar; Título, Descrição, Tipo, Status
+- Opção de tipos; CLT, Freelancer, Pessoa Jurídica (PJ)
+- Opção de status; Ativa, Pausada, Encerrada
+- Confirmação de Atualização
+
+### Função Criar nova vaga:
+- Campos; Título, Descrição, Tipo, Status
+- Opção de tipos; CLT, Freelancer, Pessoa Jurídica (PJ)
+- Opção de status; Ativa, Pausada, Encerrada
+- Opção; Salvar vaga ou voltar para lista de vagas
+
+
+## Listagem de incrições:
+- Listagem das inscrições por; ID, Vaga, Candidato, Data de Inscrição, ações
+- Opção editar ação
+- Opção excluir Ação
+- Listagem até 20 registros
+- Mensagem de confirmação para exclusão bem sucedida
+- *Paginação em contrução
+
+### Criar nova inscrição:
+- Menu dropdown para seleção da vaga
+- Caixa de texto para Carta de apresentação
+- Enviar inscrição
+
+
+## Link para perfil do usuário
+- Opção para Edição de dados do perfil e update
+
+## Link para status do perfil
+- Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
+- *Menu em construção para vagas e inscrições dentro do status
+
+
+# Veja abaixo sobre o LARAVEL
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
