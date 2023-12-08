@@ -80,7 +80,7 @@ docker-compose exec app composer install
 
 Após concluir as etapas acima, você poderá acessar a aplicação em seu navegador em:
 
-http://localhost:porta
+``http://localhost:porta``
 
 ***
 
