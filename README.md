@@ -89,13 +89,6 @@ http://localhost:porta
 ## Sistema de login - Registro:
 **Registro para Nome, Email, Senha, Confirmação de senha.**
 
-### Características do Registro:
-- Verificação para força da senha
-- Bloqueio de registro para e-mail já existente
-- Confirmação da senha
-
-![Texto Alternativo](/public/images/dashboard-logado.png)
-
 ## Dashboard
 - Dados do login, menu, opções
 - Login e Registro
@@ -104,7 +97,16 @@ http://localhost:porta
 - Mensagem de boas vindas e nome do usuário logado
 - Menu com opções para ver Vagas, Candidaturas, Perfil
 
-![Texto Alternativo](/public/images/dashboard-logado.png)
+![Dashboard logon](/public/images/dashboard-logado.png)
+
+
+### Características do Registro:
+- Verificação para força da senha
+- Bloqueio de registro para e-mail já existente
+- Confirmação da senha
+
+![Registro de Usuário](/public/images/registro.png)
+
 
 ### Características do Dashboard login:
 - Link para login com dados de entrada e-mail e senha
@@ -112,6 +114,8 @@ http://localhost:porta
 - Opção para recuperar senha
 - Envio de link para recuperação
 - *Em construção mensageria para recebimento de e-mails e link de recuperação
+
+![Login de Usuário](/public/images/login.png)
 
 
 ## Listagem de vagas:
@@ -122,11 +126,15 @@ http://localhost:porta
 
 ![Listagem de vagas](/public/images/listagem-vagas.png)
 
+
 ### Função editar vaga:
 - Editar; Título, Descrição, Tipo, Status
 - Opção de tipos; CLT, Freelancer, Pessoa Jurídica (PJ)
 - Opção de status; Ativa, Pausada, Encerrada
 - Confirmação de Atualização
+
+![Editar de vaga](/public/images/editar-vaga.png)
+
 
 ### Função Criar nova vaga:
 - Campos; Título, Descrição, Tipo, Status
@@ -147,6 +155,7 @@ http://localhost:porta
 
 ![Listar Inscrições](/public/images/listar-inscricoes.png)
 
+
 ### Criar nova inscrição:
 - Menu dropdown para seleção da vaga
 - Caixa de texto para Carta de apresentação
@@ -157,6 +166,10 @@ http://localhost:porta
 
 ## Link para perfil do usuário
 - Opção para Edição de dados do perfil e update.
+- Menu suspenso e links
+
+![Menu suspenso e links](/public/images/link-perfil.png)
+
 
 ## Link para status do perfil
 - Dados; Nome, Email, Data que foi criado o perfil, Informações de último login
@@ -177,6 +190,7 @@ http://localhost:porta
 
 ![Testes unitários](/public/images/testes-unitarios.png)
 
+
 ## Testes funcionais criados para testar os seguintes recursos:
 **Criados testes funcionais / recursos para:**
 - Criar vaga
@@ -187,6 +201,7 @@ http://localhost:porta
 - Criar perfil teste
 
 ![Testes funcionais / recursos](/public/images/testes-features.png)
+
 
 ## Criação das migrations
 - Criadas as migrations para todas funcionalidades do sistema no banco de dados

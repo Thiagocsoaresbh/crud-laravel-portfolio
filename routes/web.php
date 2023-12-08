@@ -11,6 +11,7 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 // Home Route
 Route::get('/', function () {
@@ -41,6 +42,8 @@ Route::resource('jobs', JobController::class)->middleware('auth');
 // Candidates
 Route::resource('candidates', CandidateController::class)->middleware('auth');
 
+// Usuário
+Route::get('users', [UserController::class, 'show']);
 
 // Applications
 Route::resource('applications', ApplicationController::class)->middleware('auth');
